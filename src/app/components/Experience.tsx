@@ -2,7 +2,6 @@
 
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa'
 
-// Datos de experiencia laboral
 const workExperience = [
     {
         id: 1,
@@ -30,7 +29,6 @@ const workExperience = [
     },
     ]
 
-    // Datos de formación académica
     const education = [
     {
         id: 1,
@@ -54,7 +52,6 @@ const workExperience = [
         <div className="max-w-4xl mx-auto">
             <h2 className="heading-lg gradient-text text-center mb-12">Experiencia y Formación</h2>
             
-            {/* Experiencia Laboral */}
             <div className="mb-16">
             <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                 <FaBriefcase color="var(--color-primary)" />
@@ -64,7 +61,6 @@ const workExperience = [
             <div className="space-y-12">
                 {workExperience.map((job) => (
                 <div key={job.id} className="relative pl-8 border-l-2 border-primary/30">
-                    {/* Punto indicador */}
                     <div className="absolute left-[-9px] top-0 size-4 rounded-full bg-primary"></div>
                     
                     <div className="mb-2">
@@ -75,7 +71,6 @@ const workExperience = [
                     
                     <p className="mb-3 text-light-secondary">{job.description}</p>
                     
-                    {/* Tecnologías */}
                     <div className="flex flex-wrap gap-2">
                     {job.technologies.map((tech) => (
                         <span 
@@ -91,7 +86,6 @@ const workExperience = [
             </div>
             </div>
             
-            {/* Formación Académica */}
             <div>
             <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                 <FaGraduationCap color="var(--color-primary)" />
@@ -101,7 +95,6 @@ const workExperience = [
             <div className="space-y-12">
                 {education.map((edu) => (
                 <div key={edu.id} className="relative pl-8 border-l-2 border-primary/30">
-                    {/* Punto indicador */}
                     <div className="absolute left-[-9px] top-0 size-4 rounded-full bg-primary"></div>
                     
                     <div className="mb-2">

@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
-// Datos de ejemplo para proyectos
 const projectsData = [
     {
         id: 1,

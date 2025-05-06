@@ -33,14 +33,13 @@ const Header = () => {
         }`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
-            {/* Logo */}
+
             <div className="flex-shrink-0">
                 <Link href="#hero" className="text-2xl font-bold gradient-text">
                 MiPortafolio
                 </Link>
             </div>
             
-            {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
                 {navItems.map((item) => (
                 <Link
@@ -53,7 +52,6 @@ const Header = () => {
                 ))}
             </nav>
             
-            {/* Mobile menu button */}
             <div className="md:hidden">
                 <button 
                 onClick={toggleMenu}
@@ -64,7 +62,6 @@ const Header = () => {
             </div>
             </div>
             
-            {/* Mobile menu */}
             {isOpen && (
             <div className="md:hidden bg-dark-secondary">
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">

@@ -1,6 +1,6 @@
 'use client'
 
-import { FaReact, FaNode, FaDatabase, FaServer, FaCss3 } from 'react-icons/fa'
+import { FaReact, FaNode, FaCss3 } from 'react-icons/fa'
 import { SiTypescript, SiNextdotjs, SiTailwindcss, SiVercel, SiHtml5, SiJavascript, SiVite, SiPostgresql, SiMongodb, SiPython } from 'react-icons/si'
 
 const About = () => {
