@@ -1,19 +1,24 @@
 'use client'
 
 import { FaReact, FaNode, FaDatabase, FaServer, FaCss3 } from 'react-icons/fa'
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiVercel, SiHtml5, SiJavascript } from 'react-icons/si'
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiVercel, SiHtml5, SiJavascript, SiVite, SiPostgresql, SiMongodb, SiPython } from 'react-icons/si'
 
 const About = () => {
     const technologies = [
-        { name: 'React', icon: <FaReact size={40} color="#61DAFB" /> },
+        { name: 'Python', icon: <SiPython size={40} color="#3B83BD"/>},
         { name: 'TypeScript', icon: <SiTypescript size={40} color="#3178C6" /> },
+        { name: 'JavaScript', icon: <SiJavascript size={40} color="#f0db4f"/>},
+        { name: 'React', icon: <FaReact size={40} color="#61DAFB" /> },
         { name: 'Next.js', icon: <SiNextdotjs size={40} color="white" /> },
         { name: 'Node.js', icon: <FaNode size={40} color="#339933" /> },
         { name: 'TailwindCSS', icon: <SiTailwindcss size={40} color="#38B2AC" /> },
         { name: 'Vercel', icon: <SiVercel size={40} color="white" /> },
         { name: 'HTML', icon: <SiHtml5 size={40} color="#FF7F00" /> },
         { name: 'CSS', icon: <FaCss3 size={40} color="#0099FF"  />},
-        { name: 'JavaScript', icon: <SiJavascript size={40} color="#f0db4f"/>}
+        { name: 'Vite', icon: <SiVite size={40} color="#CCA9DD"  />},
+        { name: 'PostgreSQL', icon: <SiPostgresql size={40} color="#61DAFB"  />},
+        { name: 'MongoDB', icon: <SiMongodb size={40} color="#88DC65"  />}
+
     ]
     
     return (
