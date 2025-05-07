@@ -28,7 +28,6 @@ const Contact = () => {
     const [isVisible, setIsVisible] = useState(false)
     const sectionRef = useRef<HTMLElement | null>(null)
     
-    // CORREGIDO
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -79,7 +78,7 @@ const Contact = () => {
                 subject: '',
                 message: '',
             })
-        } catch (_) {
+        } catch {
             setIsSubmitting(false)
             setMessageType('error')
             setSubmitMessage('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.')
