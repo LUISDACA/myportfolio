@@ -36,7 +36,7 @@ const Header = () => {
 
             <div className="flex-shrink-0">
                 <Link href="#hero" className="text-2xl font-bold gradient-text">
-                MiPortafolio
+                Mi Portafolio
                 </Link>
             </div>
             
