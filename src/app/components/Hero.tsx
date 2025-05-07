@@ -2,12 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { FaGithub, FaLinkedin, FaFileDownload, FaArrowDown, FaHandshake } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFileDownload, FaHandshake } from 'react-icons/fa';
 import { FiPhoneCall } from "react-icons/fi";
 
 const Hero = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const [isHovered, setIsHovered] = useState(false);
     
     useEffect(() => {
         setTimeout(() => {
@@ -52,8 +51,6 @@ const Hero = () => {
                             <a 
                                 href="#contact" 
                                 className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1 flex items-center gap-2"
-                                onMouseEnter={() => setIsHovered(true)}
-                                onMouseLeave={() => setIsHovered(false)}
                             >
                                 <FiPhoneCall /> <span>Contáctame</span>
                             </a>

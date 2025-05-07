@@ -28,6 +28,7 @@ const Contact = () => {
     const [isVisible, setIsVisible] = useState(false)
     const sectionRef = useRef<HTMLElement | null>(null)
     
+    // CORREGIDO
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -39,13 +40,15 @@ const Contact = () => {
             { threshold: 0.1 }
         )
         
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current)
+        const currentRef = sectionRef.current
+        
+        if (currentRef) {
+            observer.observe(currentRef)
         }
         
         return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current)
+            if (currentRef) { 
+                observer.unobserve(currentRef)
             }
         }
     }, [])
@@ -76,7 +79,7 @@ const Contact = () => {
                 subject: '',
                 message: '',
             })
-        } catch (error) {
+        } catch (_) {
             setIsSubmitting(false)
             setMessageType('error')
             setSubmitMessage('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.')
@@ -111,7 +114,6 @@ const Contact = () => {
         },
     ]
     
-    // Array de redes sociales
     const socialNetworks = [
         {
             icon: <FaGithub size={22} />,
