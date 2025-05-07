@@ -12,6 +12,7 @@ import {
     FaUser, 
     FaCommentAlt 
 } from 'react-icons/fa'
+import { GiBrain } from "react-icons/gi";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -351,11 +352,13 @@ const Contact = () => {
                     <p>&copy; {new Date().getFullYear()} Luis Miguel David Campo. Todos los derechos reservados.</p>
                     <p className="mt-2">
                         Desarrollado con 
-                        <span className="text-red-500 mx-1 animate-pulse">❤</span> 
+                        <span className="text-red-300 mx-2 text-2xl align-middle inline-block animate-pulse">
+                            <GiBrain />
+                        </span> 
                         utilizando Next.js, TypeScript y TailwindCSS
                     </p>
                     <div className="mt-4 text-sm">
-                        <a href="#hero" className="text-gray-400 hover:text-blue-400 transition-colors">Volver arriba</a>
+                        <a href="#hero" className="text-gray-400 hover:text-blue-400 transition-colors">Volver al inicio</a>
                     </div>
                 </footer>
             </div>
