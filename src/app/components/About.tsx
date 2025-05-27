@@ -8,19 +8,19 @@ const About = () => {
     const [visible, setVisible] = useState(false);
     
     const technologies = [
-        { name: 'Python', icon: <SiPython size={40} color="#3B83BD"/>, proficiency: 90 },
-        { name: 'TypeScript', icon: <SiTypescript size={40} color="#3178C6" />, proficiency: 85 },
-        { name: 'JavaScript', icon: <SiJavascript size={40} color="#f0db4f"/>, proficiency: 95 },
-        { name: 'React', icon: <FaReact size={40} color="#61DAFB" />, proficiency: 90 },
-        { name: 'Next.js', icon: <SiNextdotjs size={40} color="white" />, proficiency: 80 },
-        { name: 'Node.js', icon: <FaNode size={40} color="#339933" />, proficiency: 85 },
-        { name: 'TailwindCSS', icon: <SiTailwindcss size={40} color="#38B2AC" />, proficiency: 90 },
-        { name: 'Vercel', icon: <SiVercel size={40} color="white" />, proficiency: 75 },
-        { name: 'HTML', icon: <SiHtml5 size={40} color="#FF7F00" />, proficiency: 95 },
-        { name: 'CSS', icon: <FaCss3 size={40} color="#0099FF" />, proficiency: 90 },
-        { name: 'Vite', icon: <SiVite size={40} color="#CCA9DD" />, proficiency: 80 },
-        { name: 'PostgreSQL', icon: <SiPostgresql size={40} color="#61DAFB" />, proficiency: 75 },
-        { name: 'MongoDB', icon: <SiMongodb size={40} color="#88DC65" />, proficiency: 80 }
+        { name: 'Python', icon: <SiPython size={40} color="#3B83BD"/>},
+        { name: 'TypeScript', icon: <SiTypescript size={40} color="#3178C6" />},
+        { name: 'JavaScript', icon: <SiJavascript size={40} color="#f0db4f"/>},
+        { name: 'React', icon: <FaReact size={40} color="#61DAFB" />},
+        { name: 'Next.js', icon: <SiNextdotjs size={40} color="white" />},
+        { name: 'Node.js', icon: <FaNode size={40} color="#339933" />,},
+        { name: 'TailwindCSS', icon: <SiTailwindcss size={40} color="#38B2AC" />},
+        { name: 'Vercel', icon: <SiVercel size={40} color="white" />},
+        { name: 'HTML', icon: <SiHtml5 size={40} color="#FF7F00" />},
+        { name: 'CSS', icon: <FaCss3 size={40} color="#0099FF" />},
+        { name: 'Vite', icon: <SiVite size={40} color="#CCA9DD" />},
+        { name: 'PostgreSQL', icon: <SiPostgresql size={40} color="#61DAFB" />},
+        { name: 'MongoDB', icon: <SiMongodb size={40} color="#88DC65" />}
     ];
 
     useEffect(() => {
@@ -102,7 +102,7 @@ const About = () => {
                 
                 <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-300">
                     <h3 className="text-2xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                        Tecnologías que domino
+                        Tecnologías que he trabajado
                     </h3>
                     
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -117,19 +117,6 @@ const About = () => {
                                         {tech.icon}
                                     </div>
                                     <span className="font-semibold text-lg text-gray-200">{tech.name}</span>
-                                </div>
-                                
-                                <div className="mt-2">
-                                    <div className="flex justify-between mb-1">
-                                        <span className="text-sm text-gray-400">Nivel</span>
-                                        <span className="text-sm font-medium text-blue-400">{tech.proficiency}%</span>
-                                    </div>
-                                    <div className="w-full h-2.5 bg-gray-800 rounded-full overflow-hidden">
-                                        <div 
-                                            className="h-full rounded-full bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-1000 ease-out-expo w-0"
-                                            style={{ width: visible ? `${tech.proficiency}%` : '0%' }}
-                                        ></div>
-                                    </div>
                                 </div>
                             </div>
                         ))}

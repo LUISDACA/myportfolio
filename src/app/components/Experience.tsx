@@ -6,28 +6,13 @@ import { FaBriefcase, FaGraduationCap, FaCalendarAlt, FaBuilding, FaCode } from 
 const workExperience = [
     {
         id: 1,
-        position: 'Desarrollador Web Senior',
-        company: 'Empresa Innovadora',
-        period: 'Ene 2022 - Presente',
-        description: 'Desarrollo de aplicaciones web utilizando React, Next.js y TypeScript. Implementación de arquitecturas modernas y optimización de rendimiento en aplicaciones existentes.',
-        technologies: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'Node.js'],
+        position: 'Desarrollo y diseño de plataforma web',
+        company: 'Homeland Colombia',
+        period: 'Ene 2020 - Presente',
+        description: 'Desarrollo, diseño y gestión integral de una plataforma de ventas completamente funcional utilizando WordPress.',
+        technologies: ['WordPress'],
     },
-    {
-        id: 2,
-        position: 'Desarrollador Frontend',
-        company: 'Agencia Digital',
-        period: 'Mar 2020 - Dic 2021',
-        description: 'Creación de interfaces de usuario interactivas y responsivas. Colaboración en equipos ágiles para entregar proyectos de alta calidad para clientes de diversos sectores.',
-        technologies: ['React', 'JavaScript', 'SCSS', 'Redux', 'REST APIs'],
-    },
-    {
-        id: 3,
-        position: 'Desarrollador Junior',
-        company: 'Startup Tech',
-        period: 'Jun 2018 - Feb 2020',
-        description: 'Desarrollo y mantenimiento de aplicaciones web. Implementación de nuevas funcionalidades y corrección de errores en proyectos existentes.',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP'],
-    },
+    
 ]
 
 const education = [

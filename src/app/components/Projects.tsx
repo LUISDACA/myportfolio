@@ -44,8 +44,8 @@ const projectsData: Project[] = [
         description: 'Plataforma de pedidos electrónico para un restaurante con carrito de compras, pagos en línea, panel de administración y demás funcionalidades.',
         image: '/images/project3.jpg',
         technologies: ['Django', 'Python', 'JavaScript', 'TailwindCSS', 'Vite + React', 'PostgreSQL'],
-        github: 'https://github.com/LUISDACA/sabores_caseros.git',
-        liveDemo: 'https://github.com/LUISDACA/sabores_caseros.git',
+        github: 'https://github.com/LUISDACA/SaboresCaseros.git',
+        liveDemo: 'https://github.com/LUISDACA/SaboresCaseros.git',
         color: 'emerald'
     },
 ]
